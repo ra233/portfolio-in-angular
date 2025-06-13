@@ -24,8 +24,7 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              "dist/_redirects"
+              }
             ],
             "styles": [
               "src/styles.css",
