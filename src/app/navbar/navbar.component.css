@@ -1,7 +1,70 @@
-.navbar.dark-theme {
-  background-color: black !important;
+/* Ensure navbar sticks and adapts properly */
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
-body.dark-theme {
-  background-color: #222;
+
+/* Improve navbar collapse for mobile */
+.navbar-nav {
+  width: 100%;
+  text-align: center; /* Center navbar links */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Fix dark mode styling */
+.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-theme .navbar {
+  background-color: #333;
+}
+
+.dark-theme .nav-link {
+  color: white !important;
+}
+
+.dark-theme .btn-outline-dark {
+  border-color: white;
+  color: white;
+}
+
+.dark-theme .btn-outline-dark:hover {
+  background-color: white;
   color: black;
 }
+
+/* Mobile-friendly navbar spacing */
+.navbar-nav {
+  width: 100%;
+  text-align: center; /* Centers links */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Fix for collapsed navbar styling */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    text-align: center;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    padding: 10px 0;
+  }
+}
+
