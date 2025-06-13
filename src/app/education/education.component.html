@@ -1,0 +1,12 @@
+<div class="container my-5">
+  <h2 class="mb-4">🎓 Education</h2>
+  <div *ngFor="let edu of educationDetails" class="mb-4 border rounded p-3 shadow-sm">
+    <h4 class="mb-1">{{ edu.degree }}</h4>
+    <p class="mb-2">{{ edu.college }} — <em>{{ edu.passingYear }}</em></p>
+    <ul class="mb-0">
+      <li *ngFor="let highlight of edu.highlights">
+        {{ highlight }}
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.about-section {
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 250px;
+  border: 5px solid #007bff;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+button.btn-primary {
+  margin-top: 20px;
+}

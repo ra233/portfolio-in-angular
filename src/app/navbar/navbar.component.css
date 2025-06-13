@@ -1,0 +1,7 @@
+.navbar.dark-theme {
+  background-color: black !important;
+}
+body.dark-theme {
+  background-color: #222;
+  color: black;
+}

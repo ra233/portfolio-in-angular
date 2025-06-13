@@ -1,0 +1,12 @@
+<div class="container my-4">
+  <h2 class="mb-4">💼 Professional Experience</h2>
+  <div *ngFor="let exp of experiences" class="mb-4 border rounded p-1 shadow-sm">
+    <h4 class="mb-1">{{ exp.title }}</h4>
+    <p class="mb-2">{{ exp.company }} — <em>{{ exp.duration }}</em></p>
+    <ul class="mb-0">
+      <li *ngFor="let responsibility of exp.responsibilities">
+        {{ responsibility }}
+      </li>
+    </ul>
+  </div>
+</div>
